@@ -10,6 +10,7 @@
 		AB2A1CD21F998D1A009C3D80 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A1CD11F998D1A009C3D80 /* Entry.swift */; };
 		AB2A1CD51F998DAD009C3D80 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A1CD31F998DAD009C3D80 /* FeedTableViewCell.swift */; };
 		AB2A1CD61F998DAD009C3D80 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2A1CD41F998DAD009C3D80 /* FeedTableViewCell.xib */; };
+		AB4DBABF1F9DC9C10003F964 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4DBABE1F9DC9C10003F964 /* APIManager.swift */; };
 		AB4E03AC1F984FFA0046FB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E03AB1F984FFA0046FB34 /* AppDelegate.swift */; };
 		AB4E03AE1F984FFA0046FB34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E03AD1F984FFA0046FB34 /* ViewController.swift */; };
 		AB4E03B11F984FFA0046FB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4E03AF1F984FFA0046FB34 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		ABA88E261F9856B2002D9164 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA88E251F9856B2002D9164 /* CAPSPageMenu.swift */; };
 		ABA88E291F985824002D9164 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA88E271F985824002D9164 /* TableViewController.swift */; };
 		ABA88E2A1F985824002D9164 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA88E281F985824002D9164 /* TableViewController.xib */; };
-		ABA88E2C1F988044002D9164 /* Yql.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA88E2B1F988044002D9164 /* Yql.swift */; };
 		ABD0111A1F99C80F006B678C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD011191F99C80F006B678C /* DetailViewController.swift */; };
 		D2684B41616409CB60F462CE /* Pods_RssReaderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF681C4E09E8DD62AB3DFE /* Pods_RssReaderApp.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +28,7 @@
 		AB2A1CD11F998D1A009C3D80 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		AB2A1CD31F998DAD009C3D80 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		AB2A1CD41F998DAD009C3D80 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		AB4DBABE1F9DC9C10003F964 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		AB4E03A81F984FFA0046FB34 /* RssReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RssReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4E03AB1F984FFA0046FB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4E03AD1F984FFA0046FB34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		ABA88E251F9856B2002D9164 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		ABA88E271F985824002D9164 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		ABA88E281F985824002D9164 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
-		ABA88E2B1F988044002D9164 /* Yql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yql.swift; sourceTree = "<group>"; };
 		ABD011191F99C80F006B678C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BA768E98184B6DF7DBF71881 /* Pods-RssReaderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RssReaderApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RssReaderApp/Pods-RssReaderApp.release.xcconfig"; sourceTree = "<group>"; };
 		C13551392ABEABF91CF8534D /* Pods-RssReaderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RssReaderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RssReaderApp/Pods-RssReaderApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,10 +68,10 @@
 		AB4E039F1F984FFA0046FB34 = {
 			isa = PBXGroup;
 			children = (
-				AB4E03AA1F984FFA0046FB34 /* RssReaderApp */,
-				AB4E03A91F984FFA0046FB34 /* Products */,
-				240FD949D872EF1561ECD471 /* Pods */,
 				CAA2F3244173D33023FACF0F /* Frameworks */,
+				240FD949D872EF1561ECD471 /* Pods */,
+				AB4E03A91F984FFA0046FB34 /* Products */,
+				AB4E03AA1F984FFA0046FB34 /* RssReaderApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,14 +86,14 @@
 		AB4E03AA1F984FFA0046FB34 /* RssReaderApp */ = {
 			isa = PBXGroup;
 			children = (
-				ABD0111D1F99C975006B678C /* common */,
 				ABD0111C1F99C843006B678C /* TableData */,
 				ABD0111B1F99C819006B678C /* ViewControllers */,
+				ABD0111D1F99C975006B678C /* common */,
 				AB4E03AB1F984FFA0046FB34 /* AppDelegate.swift */,
-				AB4E03AF1F984FFA0046FB34 /* Main.storyboard */,
 				AB4E03B21F984FFA0046FB34 /* Assets.xcassets */,
-				AB4E03B41F984FFA0046FB34 /* LaunchScreen.storyboard */,
 				AB4E03B71F984FFA0046FB34 /* Info.plist */,
+				AB4E03B41F984FFA0046FB34 /* LaunchScreen.storyboard */,
+				AB4E03AF1F984FFA0046FB34 /* Main.storyboard */,
 			);
 			path = RssReaderApp;
 			sourceTree = "<group>";
@@ -104,28 +104,28 @@
 				ABD011191F99C80F006B678C /* DetailViewController.swift */,
 				AB4E03AD1F984FFA0046FB34 /* ViewController.swift */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		ABD0111C1F99C843006B678C /* TableData */ = {
 			isa = PBXGroup;
 			children = (
-				AB2A1CD41F998DAD009C3D80 /* FeedTableViewCell.xib */,
-				AB2A1CD31F998DAD009C3D80 /* FeedTableViewCell.swift */,
 				AB2A1CD11F998D1A009C3D80 /* Entry.swift */,
-				ABA88E281F985824002D9164 /* TableViewController.xib */,
+				AB2A1CD31F998DAD009C3D80 /* FeedTableViewCell.swift */,
+				AB2A1CD41F998DAD009C3D80 /* FeedTableViewCell.xib */,
 				ABA88E271F985824002D9164 /* TableViewController.swift */,
+				ABA88E281F985824002D9164 /* TableViewController.xib */,
 			);
-			name = TableData;
+			path = TableData;
 			sourceTree = "<group>";
 		};
 		ABD0111D1F99C975006B678C /* common */ = {
 			isa = PBXGroup;
 			children = (
-				ABA88E2B1F988044002D9164 /* Yql.swift */,
 				ABA88E251F9856B2002D9164 /* CAPSPageMenu.swift */,
+				AB4DBABE1F9DC9C10003F964 /* APIManager.swift */,
 			);
-			name = common;
+			path = common;
 			sourceTree = "<group>";
 		};
 		CAA2F3244173D33023FACF0F /* Frameworks */ = {
@@ -251,6 +251,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RssReaderApp/Pods-RssReaderApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HTMLReader/HTMLReader.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TOWebViewController/TOWebViewController.framework",
@@ -258,6 +259,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TOWebViewController.framework",
@@ -277,8 +279,8 @@
 				AB2A1CD21F998D1A009C3D80 /* Entry.swift in Sources */,
 				AB4E03AE1F984FFA0046FB34 /* ViewController.swift in Sources */,
 				AB2A1CD51F998DAD009C3D80 /* FeedTableViewCell.swift in Sources */,
+				AB4DBABF1F9DC9C10003F964 /* APIManager.swift in Sources */,
 				AB4E03AC1F984FFA0046FB34 /* AppDelegate.swift in Sources */,
-				ABA88E2C1F988044002D9164 /* Yql.swift in Sources */,
 				ABA88E261F9856B2002D9164 /* CAPSPageMenu.swift in Sources */,
 				ABA88E291F985824002D9164 /* TableViewController.swift in Sources */,
 				ABD0111A1F99C80F006B678C /* DetailViewController.swift in Sources */,
@@ -294,6 +296,7 @@
 				AB4E03B01F984FFA0046FB34 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		AB4E03B41F984FFA0046FB34 /* LaunchScreen.storyboard */ = {
@@ -302,6 +305,7 @@
 				AB4E03B51F984FFA0046FB34 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

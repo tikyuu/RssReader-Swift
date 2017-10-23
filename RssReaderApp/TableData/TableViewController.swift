@@ -1,10 +1,3 @@
-//
-//  TableViewController.swift
-//  RssReaderApp
-//
-//  Created by 真野友佑 on 2017/10/19.
-//  Copyright © 2017年 真野友佑. All rights reserved.
-//
 
 import UIKit
 import Alamofire
@@ -24,9 +17,7 @@ class TableViewController: UITableViewController {
             UINib(nibName: "FeedTableViewCell", bundle: nil),
             forCellReuseIdentifier: "FeedTableViewCell"
         )
-        Yql.request(
-            //url: "http://menthas.com/javascript/rss",
-            // query: "select * from rss",
+        APIManager.yqlRequest(
             url: self.url!,
             query: self.query!,
             limit: 10,
@@ -35,8 +26,6 @@ class TableViewController: UITableViewController {
                 let items = json["query"]["results"]["item"]
                 if let _items = items.array {
                     for item in _items {
-                        
-                        
                         self.entries.append(Entry(
                             title: item["title"].string!,
                             desc: item["description"].string, // なくてもよい
@@ -68,6 +57,10 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as! FeedTableViewCell
         let entry = self.entries[indexPath.row]
+        if cell.title.text == entry.title {
+            return cell
+        }
+        
         cell.title.text = entry.title
         cell.desc.text = entry.desc
         cell.link = entry.link

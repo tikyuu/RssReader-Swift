@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  RssReaderApp
-//
-//  Created by 真野友佑 on 2017/10/19.
-//  Copyright © 2017年 真野友佑. All rights reserved.
-//
 
 import UIKit
 

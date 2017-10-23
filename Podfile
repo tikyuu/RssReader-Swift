@@ -7,4 +7,5 @@ target 'RssReaderApp' do
   pod 'SwiftyJSON'
   pod 'TOWebViewController'
   pod 'SDWebImage'
+  pod "HTMLReader"
 end
