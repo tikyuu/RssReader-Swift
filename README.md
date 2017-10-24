@@ -16,3 +16,6 @@ http://hayateasdf.hatenablog.com/entry/2017/10/23/172408
 - 4 生成されたRssReaderApp.xcworkspaceをダブルクリック
 - 5 ビルド → 実行
 
+
+## Architecture
+![](./RssReader-Swift.png)
